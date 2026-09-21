@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "JobLink LK",
+    "slug": "joblink-lk",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "scheme": "joblinklk",
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "lk.joblink.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "JobLink LK uses your location to show jobs near you.",
+        "NSCameraUsageDescription": "JobLink LK uses your camera to let you add a profile photo.",
+        "NSPhotoLibraryUsageDescription": "JobLink LK needs access to your photos to set a profile picture.",
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "lk.joblink.app",
+      "usesCleartextTraffic": false,
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "CAMERA"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-secure-store",
+        {
+          "faceIDPermission": "Allow JobLink LK to access your Face ID for secure login."
+        }
+      ]
+    ],
+    "extra": {
+      "apiBaseUrl": "https://api.joblinklk.com/api/v1"
+    }
+  }
+}
